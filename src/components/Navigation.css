@@ -1,0 +1,143 @@
+.navigation {
+  background:#FFFFFF;
+  backdrop-filter: blur(10px);
+  /* box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08); */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 80px;
+}
+
+.nav-container {
+  width: 100%;
+  margin: 0;
+  margin-top: 30px;
+  padding: 0 105px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #667eea;
+  text-decoration: none;
+  background: #FFFFFF;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+}
+
+.nav-menu {
+  display: flex;
+  font-size: 1.1rem;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+}
+
+
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 20px;
+  height: 2px;
+  background: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.is-open span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.hamburger.is-open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.is-open span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+.nav-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 12px;
+  z-index: 1200;
+}
+
+.nav-dropdown-panel {
+  background: #ffffff;
+  width: 260px;
+  max-height: 70vh;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nav-item {
+  color: #111827;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+.nav-item:hover {
+  background: #f3f4f6;
+}
+
+.nav-item.active {
+  background: #111827;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    height: 60px;
+  }
+  
+  .nav-container {
+    padding: 0 16px;
+    margin-top: 12px;
+  }
+  
+  .nav-logo {
+    font-size: 1rem;
+  }
+  
+  .logo-img { height: 28px; }
+  
+  .nav-menu {
+    gap: 0.75rem;
+    font-size: 0.95rem;
+  }
+  
+  .nav-link {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+}

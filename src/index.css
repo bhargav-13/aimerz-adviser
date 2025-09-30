@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Abel:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+html {
+  background-color: #FFFFFF;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  color: #333;
+  background-color: #FFFFFF;
+}
+
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 0 105px;
+}
+
+/* Global footer mobile padding */
+@media (max-width: 768px) {
+  .site-footer .container { padding: 0 16px; }
+}
+
+@media (max-width: 480px) {
+  .site-footer .container { padding: 0 12px; }
+}
+
+/* Global footer mobile layout */
+@media (max-width: 900px) {
+  .footer-bottom { 
+    grid-template-columns: 1fr; 
+    text-align: center; 
+  }
+  .footer-copy { 
+    text-align: center; 
+    justify-self: center;
+  }
+  .footer-powered { 
+    text-align: center; 
+    justify-self: center; 
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.cta-button {
+  font-family: 'Inter', sans-serif;
+  background: white;
+  color: #333;
+  padding: 18px 35px;
+  font-weight: 500;
+  border: none;
+  border-radius: 60px;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.cta-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 60px;
+  padding: 1px;
+  background: linear-gradient(90deg, #A968FF 0%, rgba(102, 126, 234, 0) 100%);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: xor;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+}
+
+.cta-button:hover {
+  color: white;
+  background: linear-gradient(90deg, #A968FF 0%, #FFFFFF  100%)
+}
+
+.cta-button:hover::before {
+  background: linear-gradient(90deg, #A968FF 0%, #FFFFFF 100%);
+}

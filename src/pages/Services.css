@@ -1,0 +1,480 @@
+.services {
+  padding: 0px 0;
+}
+
+/* Core Advisory (first section) */
+.core-advisory { padding: 20px 0 40px 0; padding-left: 105px; padding-right: 105px; margin-top: -2rem; }
+.core-header { text-align: center; margin-bottom: 1.5rem; margin-top: 3rem; }
+.core-title { font-family: 'Abel', sans-serif; font-size: 2.8rem; font-weight: 400; color: #212121; margin: 0; }
+.core-subtitle { font-family: 'SF Pro Text', sans-serif; font-size: 1.2rem; color: #212121; margin-top: -0.75rem; }
+
+.core-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; max-width: 1400px; margin-left: 45px; margin-top: 50px;}
+.core-card { background: #FFFFFF; border-radius: 8px; width: 370px; height: 500px; padding: 45px 25px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border: 1px solid #e5e7eb; }
+.core-icon { width: 40px; height: 40px; border-radius: 10px; background: #A968FF; color: #fff; display: flex; align-items: center; justify-content: center; margin-bottom: 10px; }
+.core-card-title { font-family: 'Abel', sans-serif; font-size: 1.625rem; font-weight: 400; color: #212121; margin-top: 35px; }
+.core-card-desc { font-family: 'SF Pro Text', sans-serif; font-size: 0.927rem; color: #212121; font-weight: 300; line-height: 1.4; margin-top: -10px; }
+.core-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; margin-top: 30px;}
+.core-list li { font-family: 'SF Pro Text', sans-serif; font-size: 1.1585rem; color: #212121; font-weight: 600; position: relative; padding-left: 0; display: flex; align-items: center; gap: 8px; }
+.core-list li::before { content: none; }
+
+@media (max-width: 1024px) { .core-grid { grid-template-columns: 1fr; } }
+
+.actions-governance { margin: 100px 0; padding-left: 105px; padding-right: 105px; }
+.ag-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+.ag-title { font-family: 'Abel', sans-serif; font-size: 2.4rem; font-weight: 400; color: #212121; margin: 0 0 10px 0;}
+.ag-subtitle { font-family: 'SF Pro Text', sans-serif; font-size: 1.2rem; color: #A4A4A4; font-weight: 400; line-height: 1.6; max-width: 780px; }
+
+/* Left side cards */
+.ag-cards { display: grid; grid-template-columns: 1fr 1fr; row-gap: 2rem; column-gap: 1.2rem; margin-top: 70px; align-content: start; }
+.ag-card { background: #FFFFFF; border: 1px solid #e5e7eb; border-radius: 16px; padding: 16px 20px; text-align: center; box-shadow: 0 1px 6px rgba(0,0,0,0.06); font-family: 'Abel', sans-serif; font-size: 1.6rem; color: #212121; height: 150px; display: flex; align-items: center; justify-content: center; overflow: hidden; margin: 0;}
+
+/* Right side list */
+.ag-list { list-style: none; padding: 0; margin: 24px 0 0 0; display: grid; gap: 18px; }
+.ag-item { display: flex; align-items: center; gap: 16px; background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 18px 22px; font-family: 'Abel', sans-serif; font-size: 1.35rem; color: #212121; box-shadow: 0 1px 6px rgba(0,0,0,0.06); }
+.ag-icon-box { width: 44px; height: 44px; border-radius: 10px; background: #111; display: flex; align-items: center; justify-content: center; }
+.ag-item-icon { width: 18px; height: 18px; filter: invert(60%) sepia(64%) saturate(5927%) hue-rotate(218deg) brightness(93%) contrast(88%); }
+
+@media (max-width: 1024px) {
+  .ag-grid { grid-template-columns: 1fr; }
+  .ag-cards { grid-template-columns: 1fr; }
+}
+
+.clients-expertise { padding: 80px 0; margin-top: -3rem; padding-left: 105px; padding-right: 105px; }
+.ce-header { text-align: center; margin-bottom: 30px; }
+.ce-title { font-family: 'Abel', sans-serif; font-size: 3rem; font-weight: 400; color: #212121; margin: 0 0 10px 0; }
+.ce-subtitle { font-family: 'SF Pro Text', sans-serif; font-size: 1.2rem; color: #212121; margin-top: -1rem; }
+.ce-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; align-items: stretch; }
+.ce-card { background: #FFFFFF; border: 1px solid #e5e7eb; border-radius: 20px; padding: 60px 24px; text-align: center; box-shadow: 0 6px 20px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center; justify-content: flex-start; margin-top: 1rem;}
+.ce-icon { width: 56px; height: 56px; border-radius: 14px; background: #A968FF; color: #fff; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px auto; font-size: 24px; }
+.ce-card-title { font-family: 'Abel', sans-serif; font-size: 1.72rem; font-weight: 400; color: #212121; margin: 0 0 8px 0; min-height: 72px; display: flex; align-items: center; justify-content: center; text-align: center; line-height: 1.2; }
+.ce-card-desc { font-family: 'SF Pro Text', sans-serif; font-size: 1.05rem; color: #A4A4A4; margin: 0; font-weight: 400; min-height: 56px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 16px; line-height: 1.3; }      
+
+@media (max-width: 1200px) {
+  .ce-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .ce-grid { 
+    grid-template-columns: repeat(2, minmax(0, 1fr)); 
+    gap: 0.9rem;
+    justify-items: center;
+    justify-content: center;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+}
+
+
+.cta-banner-1 {
+  position: relative;
+  padding: 120px 0 100px 0;
+  background: #FFFFFF;
+  overflow: hidden;
+}
+
+.why-choose-button-1 {
+  font-family: 'Inter', sans-serif;
+  background: #FFFFFF;
+  color: #333;
+  padding: 14px 35px;
+  font-weight: 500;
+  border: none;
+  border-radius: 60px;
+  font-size: 1.2rem;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: flex-start;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.why-choose-button-1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 60px;
+  padding: 1px;
+  background: linear-gradient(90deg, #A968FF 0%, rgba(102, 126, 234, 0) 100%);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: xor;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+}
+
+.why-choose-button-1:hover {
+  color: #FAFAFA;
+  background: linear-gradient(90deg, #A968FF 0%, #FAFAFA 100%);
+}
+
+.why-choose-button-1:hover::before {
+  background: linear-gradient(90deg, #A968FF 0%, #FFFFFF 100%);
+}
+
+
+/* Footer Styles */
+.site-footer {
+  background: #2B2E3A;
+  color: #D6D6D6;
+  padding: 48px 0 24px 0;
+  width:100%;
+}
+
+.footer-brand-bar {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  background: #2B2E3A;
+  color: #FFFFFF;
+  padding: px 18px;
+  border-radius: 12px;
+  margin-bottom: 28px;
+  margin-top: 5px;
+}
+
+.footer-brand-badge {
+  width: 60px;
+  height: 60px;
+  background: #FFFFFF;
+  color: #1E1F25;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 2.1rem;
+}
+
+.footer-brand-lines { line-height: 1.1; }
+.footer-brand-line1, .footer-brand-line2 {
+  font-family: 'Abel', sans-serif;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+}
+.footer-brand-line1 { font-size: 1.8rem; }
+.footer-brand-line2 { font-size: 1.8rem; }
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.4fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.footer-brand { color: #E9E9E9; }
+.brand-mark {
+  width: 64px;
+  height: 64px;
+  background: #ffffff;
+  border-radius: 12px;
+  color: #2E3138;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+.brand-text { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+.brand-name { font-family: 'Abel', sans-serif; font-size: 2rem; letter-spacing: 0.02em; }
+.brand-sub { font-family: 'Abel', sans-serif; font-size: 2rem; letter-spacing: 0.02em; }
+.brand-desc { max-width: 560px; color: #BDBDBD; line-height: 1.7; }
+
+.footer-title { color: #FFFFFF; font-family: 'Abel', sans-serif; font-size: 1.6rem; margin: 0 0 14px 0; }
+.footer-list, .footer-contact { list-style: none; padding: 0; margin: 0; }
+.footer-list li, .footer-contact li { margin: 12px 0; color: #C8C8C8; font-size: 1.06rem; }
+.footer-contact a { color: #C8C8C8; text-decoration: none; border-bottom: none; }
+.footer-contact a:hover { color: #FFFFFF; text-decoration: none; }
+
+.footer-divider { height: 1px; background: #FFFFFF; opacity: 1; margin: 36px 0 18px 0; }
+
+.footer-bottom { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  font-size: 0.8rem; 
+  gap: 1rem; 
+  align-items: center; 
+  color: #FFFFFF; 
+}
+.footer-copy { 
+  text-align: left; 
+  justify-self: start;
+}
+.footer-powered { 
+  text-align: right; 
+  justify-self: end; 
+}
+.footer-powered a { color: #FFFFFF; text-decoration: none; border-bottom: none; }
+.footer-powered a:hover { color: #C8C8C8; text-decoration: none; }
+
+@media (max-width: 900px) {
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-bottom { 
+    grid-template-columns: 1fr; 
+    text-align: center; 
+  }
+  .footer-copy { 
+    text-align: center; 
+    justify-self: center;
+  }
+  .footer-powered { 
+    text-align: center; 
+    justify-self: center; 
+  }
+}
+
+/* Keep footer link colors constant on Services (no hover color change) */
+.site-footer .footer-list a,
+.site-footer .footer-list a:hover,
+.site-footer .footer-list a:visited,
+.site-footer .footer-list a:active,
+.site-footer .footer-list a:focus,
+.site-footer .footer-contact a,
+.site-footer .footer-contact a:hover,
+.site-footer .footer-contact a:visited,
+.site-footer .footer-contact a:active,
+.site-footer .footer-contact a:focus {
+  color: #C8C8C8;
+  text-decoration: none;
+}
+
+/* Mobile typography adjustments for Services headers and descriptions */
+@media (max-width: 640px) {
+  /* Headers */
+  .core-title,
+  .core-card-title,
+  .ag-title,
+  .ce-title,
+  .ce-card-title {
+    font-size: 1.4rem;
+  }
+
+ .core-card-title{
+  font-size: 1.1rem;
+ }
+
+ .core-card{
+  height: 320px;
+ }
+
+  /* Descriptions */
+  .core-subtitle,
+  .core-card-desc,
+  .ag-subtitle,
+  .ce-subtitle,
+  .ce-card-desc {
+    font-size: 0.7rem;
+  }
+
+  /* Widen text area on mobile */
+  .core-advisory,
+  .actions-governance,
+  .clients-expertise {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .core-grid { margin-left: 0; }
+
+  /* Remove forced line break in subtitle on small screens */
+  .core-subtitle br { display: none; }
+
+  /* Increase gap between title and subtitle */
+  .core-subtitle { margin-top: 0.5rem; }
+
+  /* Center Corporate Actions title and subtitle on mobile */
+  .ag-title,
+  .ag-subtitle {
+    text-align: center;
+  }
+
+  .ag-title{
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: -3.5rem;
+  }
+
+  .ag-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70ch;
+    padding: 0 16px;
+    font-weight: 500;
+    color: #212121;
+  }
+
+  /* Reduce card width and center it on small screens */
+  .core-card {
+    width: 260px;
+    height: 375px;
+    padding: 32px 20px;
+    margin: 0 auto;
+  }
+
+  /* Make inner list text smaller for mobile */
+  .core-list li {
+    font-size: 0.75rem;
+  }
+
+  /* Shrink tick icon beside list text on mobile */
+  .bullet-icon {
+    width: 12px;
+    height: 12px;
+  }
+
+  /* Show Corporate Actions cards in a 2x2 grid on mobile */
+  .ag-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 0.75rem;
+    row-gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .ag-card {
+    height: 80px;
+    font-size: 0.8rem;
+    padding: 8px 6.5px;
+  }
+
+  /* Risk, Compliance & Governance list styling for mobile */
+  .ag-right { margin-top: 5rem; }
+  .ag-list { max-width: 300px; margin: 10px auto 0 auto; gap: 10px; margin-top: 2rem;}
+  .ag-item {
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  .ag-icon-box { width: 28px; height: 28px; border-radius: 7px; }
+  .ag-item-icon { width: 12px; height: 12px; }
+  .ag-title {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+
+  /* Subtitle under the heading */
+  .ag-subtitle {
+    text-align: center;
+    font-size: 0.78rem;
+    line-height: 1.55;
+    color: #A4A4A4;
+    max-width: 50ch;
+    margin: 0 auto;
+  }
+
+  .ce-header { text-align: center; margin-bottom: 12px; }
+
+  .ce-title {
+    font-size: 1.35rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    margin: 0 0 6px 0;
+    margin-top: -3.5rem;
+  }
+
+  .ce-subtitle {
+    font-size: 0.78rem;
+    line-height: 1.55;
+    color: #A4A4A4;
+    max-width: 40ch;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+
+  /* Smaller icon in client expertise cards on mobile */
+  .ce-icon { width: 44px; height: 44px; font-size: 20px; }
+
+  /* Reduce card height on mobile */
+  .ce-card { 
+    padding: 30px 18px; 
+    width: 165px; 
+    margin: 0 auto;
+    justify-self: center;
+  }
+  .ce-card-title { min-height: 40px; font-size: 1rem; font-weight: 500;}
+  .ce-card-desc { min-height: 0; padding: 0 8px; }
+
+  /* CTA button - mobile sizing */
+  .why-choose-button-1 {
+    font-size: 0.6rem;
+    padding: 6px 11px;
+    gap: 0.4rem;
+    margin: 12px auto 0;
+    align-self: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  }
+
+  .why-choose-button-1 .button-arrow-1 {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* Unlock Your Growth (CTA) - mobile */
+  .cta-banner-1 { padding: 56px 0 48px 0;}
+  .cta-content { max-width: 520px; margin: 0 auto; text-align: center; padding: 0 16px; }
+  .cta-title { font-size: 1.6rem; font-weight: 600; letter-spacing: 0.01em; margin: 0 0 8px 0; margin-top: -3.5rem; }
+  .cta-subtitle { font-size: 0.65rem; line-height: 1.35; color: #A4A4A4; margin: 0 auto 8px auto; max-width: 80ch; }
+}
+
+
+/* Large screens: 1920px+ (27" and similar) */
+@media (min-width: 1920px) {
+  .core-title { font-size: 3.2rem; }
+  .core-subtitle { font-size: 1.3rem; }
+  /* Center the 3-card grid on 27" screens */
+  .core-grid { gap: 3.5rem; max-width: 1600px; margin-left: auto; margin-right: auto; }
+  .core-card { margin: 0; }
+  .core-card { width: 420px; height: 560px; }
+  .core-card-title { font-size: 1.9rem; }
+  .core-card-desc { font-size: 1.05rem; }
+  .core-list li { font-size: 1.25rem; }
+  .actions-governance { margin: 120px 0; }
+  .ag-title { font-size: 2.8rem; }
+  .ag-subtitle { font-size: 1.3rem; max-width: 900px; }
+  /* Match width/centering of Corporate Actions + Risk section to Core grid */
+  .actions-governance { padding-left: 0; padding-right: 0; }
+  .ag-grid { max-width: 1600px; margin-left: auto; margin-right: auto; }
+  .ag-cards { column-gap: 1.6rem; row-gap: 2.2rem; }
+  .ag-card { height: 170px; font-size: 1.8rem; }
+  .ag-list { gap: 22px; }
+  .ag-item { font-size: 1.5rem; padding: 22px 26px; }
+  .clients-expertise { padding: 100px 0; }
+  .ce-title { font-size: 3.4rem; }
+  .ce-subtitle { font-size: 1.3rem; }
+  /* Match width/centering of Clients grid to Core grid */
+  .clients-expertise { padding-left: 0; padding-right: 0; }
+  .ce-grid { gap: 2.4rem; max-width: 1600px; margin-left: auto; margin-right: auto; }
+  .ce-card { padding: 70px 28px; }
+}
+
+/* Ultra-large screens: 2560px+ */
+@media (min-width: 2560px) {
+  .container { max-width: 1600px; margin-left: auto; margin-right: auto; }
+  .core-title { font-size: 3.6rem; }
+  .core-subtitle { font-size: 1.4rem; }
+  /* Center grid on ultra-wide screens */
+  .core-grid { margin-left: auto; margin-right: auto; }
+  .actions-governance { padding-left: 0; padding-right: 0; }
+  .ag-grid { max-width: 1600px; margin-left: auto; margin-right: auto; }
+  .clients-expertise { padding-left: 0; padding-right: 0; }
+  .ce-grid { max-width: 1600px; margin-left: auto; margin-right: auto; }
+  .core-card { width: 480px; height: 620px; }
+  .core-card-title { font-size: 2.1rem; }
+  .core-card-desc { font-size: 1.1rem; }
+  .ag-title { font-size: 3rem; }
+  .ag-subtitle { font-size: 1.4rem; max-width: 1040px; }
+  .ag-card { height: 190px; font-size: 2rem; }
+  .ag-item { font-size: 1.6rem; padding: 24px 28px; }
+  .ce-title { font-size: 3.8rem; }
+  .ce-subtitle { font-size: 1.4rem; }
+  .ce-card { padding: 84px 32px; }
+}
