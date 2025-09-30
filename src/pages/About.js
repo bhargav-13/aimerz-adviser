@@ -148,7 +148,7 @@ const About = () => {
             <div className="story-header">
               <h2 className="story-title">The Story Behind Aimerz</h2>
               <p className="story-description">
-                Aimerz Advisors was founded by two visionaries who saw the growing need for clear, reliable, and end-to-end corporate advisory services in India's evolving business landscape. With strong expertise in finance, compliance, and capital markets, they came together to bridge the gap between businesses and opportunities.
+              Aimerz Advisors was founded on the belief that every business, whether a startup or an established enterprise, deserves clear and trusted guidance to achieve sustainable growth.
               </p>
             </div>
 
@@ -177,7 +177,7 @@ const About = () => {
                 <div className="quote-header quote-header--second">
                   <div className="quote-meta quote-meta--second">
                     <div className="quote-name quote-name--second">Nirav Vekariya</div>
-                    <div className="quote-role quote-role--second"><i>Co-Director,</i> <span>Aimerz Advisors</span></div>
+                    <div className="quote-role quote-role--second"><i>Director,</i> <span>Aimerz Advisors</span></div>
                   </div>
                   <img className="quote-avatar quote-avatar--second" src="/nirav.jpg" alt="Nirav" />
                 </div>
