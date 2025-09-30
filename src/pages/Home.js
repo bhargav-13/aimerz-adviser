@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Home.css';
 
@@ -28,6 +28,44 @@ const Home = () => {
 
   const handleLearnMoreClick = () => {
     navigate('/why-choose');
+  };
+
+  const testimonials = [
+    {
+      text: "Partnering with Aimerz Advisors transformed our IPO journey. Their end-to-end support, from compliance to investor relations, ensured a smooth listing process. The team's expertise gave us confidence at every stage.",
+      name: "Mr. Rajesh Mehta",
+      position: "CEO, Shreeji Auto Components Pvt. Ltd."
+    },
+    {
+      text: "We engaged Aimerz Advisors for financial and legal due diligence before a major acquisition. Their comprehensive analysis highlighted risks we hadn't considered and saved us from a costly mistake. Truly a trusted partner.",
+      name: "Ms. Anjali Deshpande",
+      position: "Director, GreenLeaf FMCG Ltd."
+    },
+    {
+      text: "As a startup, navigating fundraising and compliance felt overwhelming. Aimerz Advisors guided us through incorporation, Startup India registration, and investor outreach. Their mentorship helped us secure our first funding round.",
+      name: "Mr. Arjun Nair",
+      position: "Founder & CEO, FinXPay Technologies"
+    },
+    {
+      text: "Aimerz Advisors helped restructure our operations and improve capital allocation. Their bespoke strategies not only reduced costs but also improved efficiency across departments. We saw measurable growth within months.",
+      name: "Mr. Kunal Shah",
+      position: "CFO, Nova Retail Chain Pvt. Ltd."
+    },
+    {
+      text: "We worked with Aimerz Advisors on private equity fundraising. Their deep understanding of investor expectations and regulatory frameworks helped us close the deal faster and on better terms. Their network and expertise are unmatched.",
+      name: "Ms. Priya Malhotra",
+      position: "Managing Partner, Zenith Capital Advisors LLP"
+    }
+  ];
+
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+
+  const nextTestimonial = () => {
+    setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
+  };
+
+  const prevTestimonial = () => {
+    setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
   };
 
   return (
@@ -272,6 +310,53 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Testimonials Section */}
+      <section className="testimonials-section">
+        <div className="container">
+          <h2 className="testimonials-title">What Our Clients Say</h2>
+          <p className="testimonials-subtitle">Trusted by industry leaders across sectors</p>
+          
+          <div className="testimonials-slider">
+            <button className="testimonial-nav prev" onClick={prevTestimonial} aria-label="Previous testimonial">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
+
+            <div className="testimonial-card">
+              <div className="testimonial-quote-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor" opacity="0.1">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                </svg>
+              </div>
+              <p className="testimonial-text">"{testimonials[currentTestimonial].text}"</p>
+              <div className="testimonial-author">
+                <p className="testimonial-name">{testimonials[currentTestimonial].name}</p>
+                <p className="testimonial-position">{testimonials[currentTestimonial].position}</p>
+              </div>
+            </div>
+
+            <button className="testimonial-nav next" onClick={nextTestimonial} aria-label="Next testimonial">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
+          </div>
+
+          <div className="testimonial-dots">
+            {testimonials.map((_, index) => (
+              <button
+                key={index}
+                className={`testimonial-dot ${index === currentTestimonial ? 'active' : ''}`}
+                onClick={() => setCurrentTestimonial(index)}
+                aria-label={`Go to testimonial ${index + 1}`}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
       <footer className="site-footer">
         <div className="container">
           <div className="footer-grid">
