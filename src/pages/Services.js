@@ -174,7 +174,7 @@ const Services = () => {
         {/* Our Clients & Industry Expertise */}
         <section className="clients-expertise">
           <div className="ce-header">
-            <h2 className="ce-title">Our Clients & Industry Expertise</h2>
+            <h2 className="ce-title">Industry Expertise</h2>
             <p className="ce-subtitle">Serving diverse industries with specialized knowledge and proven track record.</p>
           </div>
           <div className="ce-grid">

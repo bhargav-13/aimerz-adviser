@@ -212,7 +212,7 @@ const Home = () => {
                 </svg>
               </button>
             </div>
-            <div className="why-choose-image">
+            <div className="about-why-image">
               <img src="/Why-choose.jpg" alt="Professional Advisory Team" />
             </div>
           </div>
