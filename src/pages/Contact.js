@@ -45,7 +45,38 @@ const Contact = () => {
 
   const handleInquirySubmit = (e) => {
     e.preventDefault();
-    alert('Thanks! Your inquiry has been submitted. We will respond within 24 hours.');
+    // Build WhatsApp message from form data
+    const {
+      firstName,
+      lastName,
+      company,
+      email,
+      service,
+      phone,
+      message,
+    } = inquiryData;
+
+    const fullName = [firstName, lastName].filter(Boolean).join(' ');
+    const lines = [
+      `New inquiry from Aimerz Advisors contact page`,
+      `Name: ${fullName || 'N/A'}`,
+      `Company: ${company || 'N/A'}`,
+      `Email: ${email || 'N/A'}`,
+      `Phone: ${phone || 'N/A'}`,
+      `Service: ${service || 'N/A'}`,
+      `Message: ${message || 'N/A'}`,
+    ];
+
+    const text = encodeURIComponent(lines.join('\n'));
+    // WhatsApp expects international format without + or spaces
+    const whatsappNumber = '918000044487';
+    const waUrl = `https://wa.me/${whatsappNumber}?text=${text}`;
+
+    // Open WhatsApp chat (new tab where available)
+    window.open(waUrl, '_blank');
+
+    // Optionally inform the user and reset the form
+    // alert('Redirecting you to WhatsApp to send your message.');
     setInquiryData({ firstName: '', lastName: '', company: '', email: '', service: '', phone: '', message: '' });
   };
 
