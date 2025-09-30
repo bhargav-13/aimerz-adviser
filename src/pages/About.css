@@ -454,7 +454,7 @@
   text-align: center;
 }
 
-.why-choose-button4 {
+.why-choose-button5 {
   font-family: 'Inter', sans-serif;
   background: #FFFFFF;
   color: #333;
@@ -473,7 +473,7 @@
   margin-top: 10px;
 }
 
-.why-choose-button4::before {
+.why-choose-button5::before {
   content: '';
   position: absolute;
   top: 0;
@@ -489,17 +489,17 @@
   -webkit-mask-composite: xor;
 }
 
-.why-choose-button4:hover {
+.why-choose-button5:hover {
   color: #FAFAFA;
   background: linear-gradient(90deg, #A968FF 0%, #FAFAFA 100%);
 }
 
-.why-choose-button4:hover::before {
+.why-choose-button5:hover::before {
   background: linear-gradient(90deg, #A968FF 0%, #FAFAFA 100%);
 }
 
-.button-arrow4 { transition: transform 0.3s ease; }
-.why-choose-button4:hover .button-arrow2 { transform: translateX(2px); }
+.button-arrow5 { transition: transform 0.3s ease; }
+.why-choose-button5:hover .button-arrow2 { transform: translateX(2px); }
 
 @media (max-width: 1200px) {
   .strengths-grid {
@@ -582,7 +582,66 @@
 
   /* Smaller number badge for mobile */
   .strength-icon { width: 36px; height: 36px; border-radius: 8px; }
+
+  .why-choose-button5 {
+    font-family: 'Inter', sans-serif;
+    background: #FFFFFF;
+    color: #333;
+    padding: 7px 14px;
+    font-weight: 500;
+    border: none;
+    font-size: 0.5rem;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: -rem;
+    align-self: flex-start;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .why-choose-button5::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 60px;
+    padding: 1px;
+    background: linear-gradient(90deg, #A968FF 0%, rgba(102, 126, 234, 0) 100%);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: xor;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+  }
+  
+  .why-choose-button5:hover {
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #A968FF 0%, #FFFFFF 100%);
+  }
+  
+  .why-choose-button5:hover::before {
+    background: linear-gradient(90deg, #A968FF 0%, #FFFFFF 100%);
+  }
+  
+  .button-arrow3 {
+    width: 6px;
+    height: 6px;
+  }
+  
+  .button-arrow3 {
+    transition: transform 0.3s ease;
+  }
+  
+  .why-choose-button5:hover .button-arrow {
+    transform: translateX(2px);
+  }
 }
+
+
+
 
 @media (max-width: 480px) {
   .strengths-grid {

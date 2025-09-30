@@ -17,6 +17,55 @@
 .core-list li { font-family: 'SF Pro Text', sans-serif; font-size: 1.1585rem; color: #212121; font-weight: 600; position: relative; padding-left: 0; display: flex; align-items: center; gap: 8px; }
 .core-list li::before { content: none; }
 
+
+.why-choose-button7 {
+  font-family: 'Inter', sans-serif;
+  background: #FFFFFF;
+  color: #333;
+  padding: 14px 35px;
+  font-weight: 500;
+  border: none;
+  border-radius: 60px;
+  font-size: 1.2rem;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: flex-start;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.why-choose-button7::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 60px;
+  padding: 1px;
+  background: linear-gradient(90deg, #A968FF 0%, rgba(102, 126, 234, 0) 100%);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: xor;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+}
+
+.why-choose-button7:hover {
+  color: #FAFAFA;
+  background: linear-gradient(90deg, #A968FF 0%, #FAFAFA 100%);
+}
+
+.why-choose-button7:hover::before {
+  background: linear-gradient(90deg, #A968FF 0%, #FAFAFA 100%);
+}
+
+.button-arrow7 { transition: transform 0.3s ease; }
+.why-choose-button7:hover .button-arrow2 { transform: translateX(2px); }
+
+
 @media (max-width: 1024px) { .core-grid { grid-template-columns: 1fr; } }
 
 .actions-governance { margin: 100px 0; padding-left: 105px; padding-right: 105px; }
@@ -73,49 +122,7 @@
   overflow: hidden;
 }
 
-.why-choose-button-1 {
-  font-family: 'Inter', sans-serif;
-  background: #FFFFFF;
-  color: #333;
-  padding: 14px 35px;
-  font-weight: 500;
-  border: none;
-  border-radius: 60px;
-  font-size: 1.2rem;
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  align-self: flex-start;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin-top: 10px;
-}
 
-.why-choose-button-1::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 60px;
-  padding: 1px;
-  background: linear-gradient(90deg, #A968FF 0%, rgba(102, 126, 234, 0) 100%);
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask-composite: xor;
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-}
-
-.why-choose-button-1:hover {
-  color: #FAFAFA;
-  background: linear-gradient(90deg, #A968FF 0%, #FAFAFA 100%);
-}
-
-.why-choose-button-1:hover::before {
-  background: linear-gradient(90deg, #A968FF 0%, #FFFFFF 100%);
-}
 
 
 /* Footer Styles */
@@ -430,6 +437,62 @@
   .cta-content { max-width: 520px; margin: 0 auto; text-align: center; padding: 0 16px; }
   .cta-title { font-size: 1.6rem; font-weight: 600; letter-spacing: 0.01em; margin: 0 0 8px 0; margin-top: -3.5rem; }
   .cta-subtitle { font-size: 0.65rem; line-height: 1.35; color: #A4A4A4; margin: 0 auto 8px auto; max-width: 80ch; }
+
+  .why-choose-button7 {
+    font-family: 'Inter', sans-serif;
+    background: #FFFFFF;
+    color: #333;
+    padding: 7px 14px;
+    font-weight: 500;
+    border: none;
+    font-size: 0.5rem;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: -rem;
+    align-self: flex-start;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .why-choose-button7::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 60px;
+    padding: 1px;
+    background: linear-gradient(90deg, #A968FF 0%, rgba(102, 126, 234, 0) 100%);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: xor;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+  }
+  
+  .why-choose-button7:hover {
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #A968FF 0%, #FFFFFF 100%);
+  }
+  
+  .why-choose-button7:hover::before {
+    background: linear-gradient(90deg, #A968FF 0%, #FFFFFF 100%);
+  }
+  
+  .button-arrow7 {
+    width: 6px;
+    height: 6px;
+  }
+  
+  .button-arrow7 {
+    transition: transform 0.3s ease;
+  }
+  
+  .why-choose-button7:hover .button-arrow {
+    transform: translateX(2px);
+  }
 }
 
 

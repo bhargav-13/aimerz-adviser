@@ -3,6 +3,24 @@
   background-color: #FFFFFF;
 }
 
+/* Ensure testimonials section uses the light gray background site-wide */
+.testimonials-section2 {
+  background: #FFFFFF !important;
+}
+
+/* Remove any decorative overlay that might tint the background */
+.testimonials-section::before {
+  content: none !important;
+}
+
+.cta-banner2 {
+  position: relative;
+  padding: 120px 0 100px 0;
+  background: #FFFFFF;
+  overflow: hidden;
+  margin-top: -2rem;
+}
+
 .competitive-advantages {
   padding: 80px 0;
   padding-left: 105px;
@@ -398,6 +416,19 @@
   background: linear-gradient(90deg, #A968FF 0%, #D1C4FF 100%);
   color: #FFFFFF;
 }
+  /* Ensure testimonial arrows show on mobile for this page as well */
+  .testimonials-section .testimonials-slider { position: relative; }
+  .testimonials-section .testimonial-nav {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 36px;
+    z-index: 2;
+  }
+  .testimonials-section .testimonial-nav.prev { left: 8px; }
+  .testimonials-section .testimonial-nav.next { right: 8px; }
 
 .why-choose-button{
   font-family: 'Inter', sans-serif;
