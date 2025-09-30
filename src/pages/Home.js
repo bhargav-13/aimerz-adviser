@@ -362,7 +362,9 @@ const Home = () => {
           <div className="footer-grid">
             <div className="footer-brand">
               <div className="footer-brand-bar">
-                <div className="footer-brand-badge">A</div>
+                <div className="footer-brand-badge">
+                  <img src="/Group 48096821.svg" alt="Aimerz Advisors Logo" />
+                </div>
                 <div className="footer-brand-lines">
                   <div className="footer-brand-line1">AIMERZ ADVISORS</div>
                   <div className="footer-brand-line2">PRIVATE LIMITED</div>
