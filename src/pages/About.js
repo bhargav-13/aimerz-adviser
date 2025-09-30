@@ -154,7 +154,7 @@ const About = () => {
 
             <div className="story-content story-content--first">
               <div className="story-photo">
-                <img src="/Meeting.jpg" alt="Founder portrait" />
+                <img src="/image.png" alt="Founder portrait" />
               </div>
 
               <div className="story-quote story-quote--first">
@@ -188,7 +188,7 @@ const About = () => {
               </div>
 
               <div className="story-photo">
-                <img src="/Meeting.jpg" alt="Founder portrait" />
+                <img src="/nirav.jpg" alt="Founder portrait" />
               </div>
             </div>
           </div>
@@ -196,7 +196,7 @@ const About = () => {
 
           <div className="story-content story-content--first">
               <div className="story-photo">
-                <img src="/Meeting.jpg" alt="Founder portrait" />
+                <img src="/janvi.jpeg" alt="Founder portrait" />
               </div>
 
               <div className="story-quote story-quote--first">

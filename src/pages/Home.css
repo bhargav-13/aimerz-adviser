@@ -1,5 +1,6 @@
 .home {
   overflow-x: hidden;
+  background-color: #FAFAFA;
 }
 
 .hero {
@@ -374,6 +375,9 @@
 .why-choose-image {
   position: relative;
   padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Minimal corner lines on all 4 corners */
@@ -406,7 +410,7 @@
   height: auto;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid #e2e8f0;
-  margin-right: 80px;
+  /* margin-right: 80px; */
   position: relative;
   z-index: 2;
 }
