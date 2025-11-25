@@ -154,12 +154,12 @@ const About = () => {
 
             <div className="story-content story-content--first">
               <div className="story-photo">
-                <img src="/image.png" alt="Founder portrait" />
+                <img src="WhatsApp Image 2025-11-21 at 21.41.11_8daf4eff.jpg" alt="Founder portrait" />
               </div>
 
               <div className="story-quote story-quote--first">
                 <div className="quote-header quote-header--first">
-                  <img className="quote-avatar quote-avatar--first" src="/image.png" alt="Milan Shakhiya" />
+                  <img className="quote-avatar quote-avatar--first" src="/WhatsApp Image 2025-11-21 at 21.41.11_8daf4eff.jpg" alt="Milan Shakhiya" />
                   <div className="quote-meta quote-meta--first">
                     <div className="quote-name quote-name--first">Milan Shakhiya</div>
                     <div className="quote-role quote-role--first"><i>Director,</i> <span>Aimerz Advisors</span></div>
