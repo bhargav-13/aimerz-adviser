@@ -414,8 +414,8 @@ const Home = () => {
           <div className="footer-divider"></div>
 
           <div className="footer-bottom">
-            <div className="footer-copy">Copyright 2025 – Aimerz Advisors All rights reserved</div>
-            <div className="footer-powered">Powered by <a href="https://www.codelix.in/" target="_blank" rel="noopener noreferrer">Codelix IT Solutions Pvt. Ltd.</a></div>
+            <div className="footer-copy">Copyright 2026 – Aimerz Advisors All rights reserved</div>
+            <div className="footer-powered">Powered by <a href="https://www.codelixitsolutions.com/" target="_blank" rel="noopener noreferrer">Codelix IT Solutions Pvt. Ltd.</a></div>
           </div>
         </div>
       </footer>
